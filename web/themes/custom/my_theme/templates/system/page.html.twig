@@ -1,0 +1,31 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      {{ page.branding }}
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      {{ page.navigation }}
+      <ul class="nav navbar-nav navbar-right">
+        {{ page.search }}
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      {{ page.right_sidebar }}
+    </div>
+    <div class="col-sm-8 text-left"> 
+      {{ page.content }}
+    </div>
+    <div class="col-sm-2 sidenav">
+      {{ page.left_sidebar }}
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  {{ page.footer }}
+</footer>
